@@ -1,0 +1,1 @@
+<!DOCTYPE html><html>   <head>       <meta charset="utf-8">       <title>index</title>   </head>   <body>       <h3>欢迎登陆用户管理系统</h3>   <p>用户列表：</p>   {% for user in users %}    <p>{{ user.name }} {{ user.pwd }}</p>    {% endfor %}   </body></html>

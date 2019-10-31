@@ -1,1 +1,0 @@
-# -*- coding: utf-8 -*-from django.shortcuts import render# 接收POST请求数据def search_post(request):    ctx = {}    if 'q' in request.POST and request.POST['q']:        ctx['rlt'] = request.POST['q']    else:        ctx['rlt'] = "你提交了空表单"    return render(request, "post.html", ctx)

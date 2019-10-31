@@ -1,5 +1,5 @@
 from django.contrib import admin
-from TestModel.models import Stud, Contact, Tag
+from TestModel.models import User, Contact, Tag
 
 
 # Register your models here.
@@ -24,4 +24,4 @@ class ContactAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Contact, ContactAdmin)
-admin.site.register([Stud])
+admin.site.register([User])

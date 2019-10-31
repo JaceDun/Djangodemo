@@ -1,15 +1,15 @@
 from django.db import models
 
 
-class Stud(models.Model):
-    name = models.CharField(max_length=20)
-    banji = models.CharField(max_length=20)
-
-
 class Contact(models.Model):
     name = models.CharField(max_length=200)
     age = models.IntegerField(default=0)
     email = models.EmailField()
+
+
+class User(models.Model):
+    name = models.CharField(max_length=20)
+    pwd = models.CharField(max_length=20)
 
 
 def __unicode__(self):

@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-from django.shortcuts import renderfrom TestModel.models import User# 接收POST请求数据def list_users(request):    content = {}    results = User.objects.all()    content['users'] = results    return render(request, "index.html", content)

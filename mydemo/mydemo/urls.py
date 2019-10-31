@@ -1,12 +1,12 @@
 from django.urls import path
 from django.contrib import admin
-from . import view, testdb, search, search2
+from . import users_manage, testdb, search, register, logion
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', view.hello),
+    path('index/', users_manage.list_users),
     path('list-emp/', testdb.query_emp),
-    path('search-form/', search.search_form),
-    path('search/', search.search),
-    path('search2/', search2.search_post),
+    path('search/', search.search_post),
+    path('register/', register.register_user),
+    path('logion/', logion.logion_check),
 ]
