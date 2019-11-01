@@ -7,9 +7,11 @@ class Contact(models.Model):
     email = models.EmailField()
 
 
-class User(models.Model):
-    name = models.CharField(max_length=20)
-    pwd = models.CharField(max_length=20)
+class Account(models.Model):
+    name = models.CharField('账号', max_length=50, unique=True)
+    pwd = models.CharField('密码', max_length=100)
+    email = models.EmailField('电子邮箱')
+    phone = models.CharField('电话', max_length=100)
 
 
 def __unicode__(self):
