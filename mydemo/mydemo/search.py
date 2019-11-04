@@ -1,1 +1,0 @@
-# -*- coding: utf-8 -*-from django.shortcuts import render# 接收POST请求数据def search_post(request):    ctx = {}    if 'q' in request.POST and request.POST['q']:        ctx['rlt'] = "您的搜索内容为：" + request.POST['q']    else:        ctx['rlt'] = "请输入关键字！"    return render(request, "search.html", ctx)
