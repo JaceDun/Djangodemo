@@ -24,7 +24,7 @@ SECRET_KEY = '4d%h)!yf$fkvgcfdiod^_=*l(#j!p+pabz5gc(%g%he4s_z_zg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
