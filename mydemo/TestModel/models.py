@@ -8,8 +8,8 @@ class Contact(models.Model):
 
 
 class Account(models.Model):
-    name = models.CharField('账号', max_length=50, unique=True)
-    pwd = models.CharField('密码', max_length=100)
+    name = models.CharField('会员号', max_length=50, unique=True)
+    pwd = models.CharField('姓名', max_length=100)
     email = models.EmailField('电子邮箱')
     phone = models.CharField('电话', max_length=100)
 
