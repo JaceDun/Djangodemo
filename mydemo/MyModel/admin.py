@@ -1,5 +1,5 @@
 from django.contrib import admin
-from TestModel.models import Account, Contact, Tag
+from MyModel.models import Account, Contact, Tag
 
 
 # Register your models here.
